@@ -53,8 +53,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // customize your notification content
         let content = UNMutableNotificationContent()
-        content.title = "Geofence App"
-        content.body = "Well-crafted body message"
+        content.title = "Geofence Smart Shopper App"
+        content.body = "Welcome to Smart Shop"
         content.sound = UNNotificationSound.default()
 
         // when the notification will be triggered

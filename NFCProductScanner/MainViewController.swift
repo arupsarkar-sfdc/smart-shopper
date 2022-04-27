@@ -19,7 +19,9 @@ class MainViewController: UIViewController {
     var productStore = ProductStore.shared
     let locationManager = CLLocationManager()
     
+    @IBOutlet weak var usernamelbl: UILabel!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var tokenlbl: UILabel!
     
     @IBAction func auth0Login(_ sender: Any) {
         print("--> Auth started")
@@ -39,6 +41,8 @@ class MainViewController: UIViewController {
                         // Handle error
                         return
                     }
+                    self.usernamelbl.text = "smart.shopper@gmail.com"
+                    self.tokenlbl.text = keychain.string(forKey: "access_token")
                     print(accessToken)
                     print(refreshToken)
                     keychain.setString(accessToken, forKey: "access_token")
