@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>NFC Scanner</string>
+	<string>Scan &amp; Go</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -45,5 +45,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Requires constant access to your phone’s location to notify you when you enter or leave a geofence.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Requires constant access to your phone’s location to notify you when you enter or leave a geofence.</string>
 </dict>
 </plist>
